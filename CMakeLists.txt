@@ -48,10 +48,10 @@ option(ENABLE_PCH "Enable Precompiled Headers" ON)
 
 # Main target setup
 include_directories("include")
+include_directories("formBuilder")
 
 file(GLOB sources "src/*.cpp")
 file(GLOB includes "include/*.hpp" "include/*.h")
-
 add_executable(${PROJECT_NAME} WIN32 ${sources} ${includes})
 
 target_include_directories(${PROJECT_NAME} PRIVATE "include")

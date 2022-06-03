@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<resource xmlns="http://www.wxwidgets.org/wxxrc" version="2.5.3.0">
+	<object class="wxFrame" name="MyFrame1">
+		<style>wxDEFAULT_FRAME_STYLE|wxTAB_TRAVERSAL</style>
+		<size>744,530</size>
+		<title>Kaleidoscope</title>
+		<centered>1</centered>
+		<aui_managed>0</aui_managed>
+		<object class="wxBoxSizer">
+			<orient>wxHORIZONTAL</orient>
+			<object class="sizeritem">
+				<option>1</option>
+				<flag>wxEXPAND | wxALL</flag>
+				<border>5</border>
+				<object class="wxPanel" name="View" subclass="View">
+					<style>wxTAB_TRAVERSAL</style>
+					<bg>#f0f0f0</bg>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>1</option>
+				<flag>wxALL</flag>
+				<border>5</border>
+				<object class="wxPanel" name="Controler" subclass="Controler">
+					<style>wxTAB_TRAVERSAL</style>
+					<object class="wxBoxSizer">
+						<orient>wxVERTICAL</orient>
+						<object class="sizeritem">
+							<option>0</option>
+							<flag>wxALL</flag>
+							<border>5</border>
+							<object class="wxButton" name="m_button1">
+								<label>MyButton</label>
+								<default>0</default>
+								<auth_needed>0</auth_needed>
+								<markup>0</markup>
+								<bitmap />
+							</object>
+						</object>
+						<object class="sizeritem">
+							<option>0</option>
+							<flag>wxALL</flag>
+							<border>5</border>
+							<object class="wxButton" name="m_button2">
+								<label>MyButton</label>
+								<default>0</default>
+								<auth_needed>0</auth_needed>
+								<markup>0</markup>
+								<bitmap />
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+</resource>
