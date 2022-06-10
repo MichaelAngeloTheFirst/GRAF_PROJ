@@ -66,6 +66,8 @@ include(${wxWidgets_USE_FILE})
 target_include_directories(${PROJECT_NAME} PRIVATE ${wxWidgets_INCLUDE_DIRS})
 target_link_libraries(${PROJECT_NAME} PRIVATE ${wxWidgets_LIBRARIES})
 
+find_package(OpenMP REQUIRED)
+target_link_libraries(${PROJECT_NAME} PUBLIC OpenMP::OpenMP_CXX)
 
 # Visual Studio stuff
 set_property(TARGET ${PROJECT_NAME} PROPERTY 
