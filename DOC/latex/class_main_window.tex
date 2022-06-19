@@ -1,0 +1,73 @@
+\hypertarget{class_main_window}{}\doxysection{Dokumentacja klasy Main\+Window}
+\label{class_main_window}\index{MainWindow@{MainWindow}}
+
+
+Klasa odpowiadająca za stworzenie okna.  
+
+
+
+
+{\ttfamily \#include $<$Main\+Window.\+h$>$}
+
+Diagram dziedziczenia dla Main\+Window\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_main_window}
+\end{center}
+\end{figure}
+\doxysubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_main_window_a34c4b4207b46d11a4100c9b19f0e81bb}{Main\+Window}} ()
+\item 
+\mbox{\Hypertarget{class_main_window_a22124af55e7cace7c46a391a9d05c9d6}\label{class_main_window_a22124af55e7cace7c46a391a9d05c9d6}} 
+void {\bfseries MW\+\_\+resize} (wx\+Event \&event)
+\item 
+\mbox{\Hypertarget{class_main_window_a9c24cc7a48bb4f4a06b895176651dda8}\label{class_main_window_a9c24cc7a48bb4f4a06b895176651dda8}} 
+void {\bfseries MW\+\_\+hide\+Control} (wx\+Command\+Event \&event)
+\end{DoxyCompactItemize}
+\doxysubsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_main_window_a027705aaddfddbe2b8405f8123a168e4}\label{class_main_window_a027705aaddfddbe2b8405f8123a168e4}} 
+int {\bfseries m\+\_\+w\+\_\+height} = 800
+\begin{DoxyCompactList}\small\item\em Wymiary okienka. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_a4fad3d984462f9ff3a58da9ace74ceb8}\label{class_main_window_a4fad3d984462f9ff3a58da9ace74ceb8}} 
+int {\bfseries m\+\_\+w\+\_\+width} = 1200
+\item 
+\mbox{\Hypertarget{class_main_window_a64442fadcc30a26a9295939ecb1a1006}\label{class_main_window_a64442fadcc30a26a9295939ecb1a1006}} 
+wx\+Box\+Sizer $\ast$ {\bfseries m\+\_\+bsizer} = nullptr
+\begin{DoxyCompactList}\small\item\em Sizer układający pasek UI i panel z obrazkiem. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_a4da90056439ca5071538f2ce7c123a59}\label{class_main_window_a4da90056439ca5071538f2ce7c123a59}} 
+\mbox{\hyperlink{class_controler}{Controler}} $\ast$ {\bfseries m\+\_\+control} = nullptr
+\begin{DoxyCompactList}\small\item\em Klasa z elementami UI. Posiada funkcje zmieniające parametry klasy przechowującej dane m\+\_\+model. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_a310561c3987c77a2010b5c36a5f48f02}\label{class_main_window_a310561c3987c77a2010b5c36a5f48f02}} 
+wx\+Button $\ast$ {\bfseries m\+\_\+collapse\+Button} = nullptr
+\begin{DoxyCompactList}\small\item\em Nieużywane. Chowa pasek UI. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_a95195ec63cefaaa9974ec26eb8c76928}\label{class_main_window_a95195ec63cefaaa9974ec26eb8c76928}} 
+bool {\bfseries hide\+Control} = false
+\item 
+\mbox{\Hypertarget{class_main_window_a50f479a4bed7506dc2310f969786eab1}\label{class_main_window_a50f479a4bed7506dc2310f969786eab1}} 
+\mbox{\hyperlink{class_view}{View}} $\ast$ {\bfseries m\+\_\+view} = nullptr
+\begin{DoxyCompactList}\small\item\em Klasa wyświetlająca wygenerowany obrazek z m\+\_\+model. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_ad53f7a7b2fc404e9b13ebf3cad0ac360}\label{class_main_window_ad53f7a7b2fc404e9b13ebf3cad0ac360}} 
+\mbox{\hyperlink{class_model}{Model}} {\bfseries m\+\_\+model} \{\}
+\begin{DoxyCompactList}\small\item\em Klasa z danymi i funkcjami generującymi efekt kalejdoskopu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Klasa odpowiadająca za stworzenie okna. 
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_main_window_a34c4b4207b46d11a4100c9b19f0e81bb}\label{class_main_window_a34c4b4207b46d11a4100c9b19f0e81bb}} 
+\index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
+\index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{MainWindow()}{MainWindow()}}
+{\footnotesize\ttfamily Main\+Window\+::\+Main\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\texorpdfstring{$<$}{<}Calls resize event after all user input is done. Is also called on window maximizing.
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+include/Main\+Window.\+h\item 
+src/Main\+Window.\+cpp\end{DoxyCompactItemize}

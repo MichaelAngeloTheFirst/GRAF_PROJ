@@ -1,0 +1,32 @@
+\hypertarget{_main_window_8h_source}{}\doxysection{Main\+Window.\+h}
+\label{_main_window_8h_source}\index{include/MainWindow.h@{include/MainWindow.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 ﻿\#pragma once }
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <wx/wx.h>}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}Controler.h"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}View.h"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}id.h"{}}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{10 \textcolor{keyword}{class }\mbox{\hyperlink{class_main_window}{MainWindow}} : \textcolor{keyword}{public} wxFrame}
+\DoxyCodeLine{11 \{}
+\DoxyCodeLine{12 \textcolor{keyword}{public}: }
+\DoxyCodeLine{13     \mbox{\hyperlink{class_main_window_a34c4b4207b46d11a4100c9b19f0e81bb}{MainWindow}}();}
+\DoxyCodeLine{14     \mbox{\hyperlink{class_main_window}{\string~MainWindow}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{15     \textcolor{keywordtype}{void} MW\_resize(wxEvent \& event);}
+\DoxyCodeLine{16     \textcolor{keywordtype}{void} MW\_hideControl(wxCommandEvent\& event);}
+\DoxyCodeLine{17 \textcolor{keyword}{private}:}
+\DoxyCodeLine{19     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_main_window_a027705aaddfddbe2b8405f8123a168e4}{m\_w\_height}} = 800;}
+\DoxyCodeLine{20     \textcolor{keywordtype}{int} m\_w\_width = 1200;}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22     wxBoxSizer* \mbox{\hyperlink{class_main_window_a64442fadcc30a26a9295939ecb1a1006}{m\_bsizer}} = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{23     \mbox{\hyperlink{class_controler}{Controler}}* \mbox{\hyperlink{class_main_window_a4da90056439ca5071538f2ce7c123a59}{m\_control}} = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25     wxButton* \mbox{\hyperlink{class_main_window_a310561c3987c77a2010b5c36a5f48f02}{m\_collapseButton}} = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{26     \textcolor{keywordtype}{bool} hideControl = \textcolor{keyword}{false};}
+\DoxyCodeLine{27     \mbox{\hyperlink{class_view}{View}}* \mbox{\hyperlink{class_main_window_a50f479a4bed7506dc2310f969786eab1}{m\_view}} = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{28     \mbox{\hyperlink{class_model}{Model}} \mbox{\hyperlink{class_main_window_ad53f7a7b2fc404e9b13ebf3cad0ac360}{m\_model}}\{\};}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30 \};}
+
+\end{DoxyCode}

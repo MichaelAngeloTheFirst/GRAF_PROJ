@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projekt nr 30 &quot;Kalejdoskop&quot;: Plik źródłowy include/Model.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Projekt nr 30 &quot;Kalejdoskop&quot;
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Szukaj','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">Model.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span>﻿#pragma once</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;wx/wx.h&gt;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;wx/image.h&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;wx/anidecod.h&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;wx/quantize.h&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;wx/wfstream.h&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;CImg.h&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">//WX_DECLARE_OBJARRAY(wxImage, wxImageArray);</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_model.html">   14</a></span><span class="keyword">class </span><a class="code hl_class" href="class_model.html">Model</a> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <a class="code hl_class" href="class_model.html">Model</a>();</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_model.html#ad411f79fd2dfcf484d21192c56bac81c">model_resize</a>(); </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_model.html#afd2a11a2539ffe75fba13dbb1fb79019">model_save</a>(std::string file_name);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_model.html#afa107d86816f0dbe800c8d13d80d4b56">model_load</a>(wxString addres);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">const</span> wxImage <a class="code hl_function" href="class_model.html#a13d09159d372d33a9e80e718f43e3f68">kaleidoscope</a>(<span class="keyword">const</span> wxImage&amp; img, <span class="keywordtype">int</span> n_axis, <span class="keywordtype">double</span> ang_axis = 0.0);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_model.html#af85e27b2dacbb9344924a81ad95fe1b3">axis_show</a>(<span class="keywordtype">bool</span> show);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">const</span> wxImage &amp; <a class="code hl_function" href="class_model.html#ad0c6e9d6be64c8b8aff239993cae8302">get_image</a>();</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    wxImageArray&amp; <a class="code hl_function" href="class_model.html#a69de7656820bdc86a3f4a074c6b451a0">get_gif_buffer</a>();</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_model.html#a751f27298fa83d3bc03d88c224a746d6">reset_copy</a>();</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    wxBitmap &amp; <a class="code hl_function" href="class_model.html#a608d45d5405edebcf9a1464caa383613">get_bitmap</a>();</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_model.html#aa5b57dd6ca79e5c2f5933d487c2bf6c8">get_axis</a>();</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="class_model.html#a4277b80f1e81da0b16d30877855d974a">get_angle</a>();</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_model.html#a63bf83904cde4c693c1721fbde3051ad">set_axis</a>(<span class="keywordtype">int</span> n);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_model.html#aea271dcca491ae39bfd42aeb6704bcd6">set_scale</a>(<span class="keywordtype">int</span> n);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_model.html#ad46a5515817a58af52e0e9dd8b90dcd4">set_frames</a>(<span class="keywordtype">int</span> n);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_model.html#a5367317b02254559b9102456025771f3">set_angle</a>(<span class="keywordtype">double</span> n);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="class_model.html#a393d293cfa9bf5a0fa974dce1d5fe385">   36</a></span>    wxImageArray <a class="code hl_variable" href="class_model.html#a393d293cfa9bf5a0fa974dce1d5fe385">gif_buffer</a>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="class_model.html#a3d4a951981817797a0708837130c1768">   37</a></span>    wxImage <a class="code hl_variable" href="class_model.html#a3d4a951981817797a0708837130c1768">m_image</a>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="class_model.html#a5de10cb184cf4913b4687f513a229a92">   38</a></span>    wxImage <a class="code hl_variable" href="class_model.html#a5de10cb184cf4913b4687f513a229a92">m_image_copy</a>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="class_model.html#a6613f50d7f42656e779dbc02cd8087e4">   39</a></span>    wxBitmap <a class="code hl_variable" href="class_model.html#a6613f50d7f42656e779dbc02cd8087e4">m_bitmap</a>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="class_model.html#a4f4a0568d4967efd876bc1fd54535acf">   40</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_model.html#a4f4a0568d4967efd876bc1fd54535acf">num_of_axis</a> = 1;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="class_model.html#a32647ecc9ed2948e0df4592bb9064640">   41</a></span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="class_model.html#a32647ecc9ed2948e0df4592bb9064640">ang_of_axis</a> = 0.0;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="class_model.html#a17f3efecd6f45ae80124aaa984bd52f1">   42</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_model.html#a17f3efecd6f45ae80124aaa984bd52f1">frame_count</a> = 60;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="class_model.html#a2067bd0a2b5755aed540dfdf95d98345">   43</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_model.html#a2067bd0a2b5755aed540dfdf95d98345">gif_frames</a> = 90;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="class_model.html#ae2d08a5cb2bc2b601fc30dc3f6eb67c7">   44</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_model.html#ae2d08a5cb2bc2b601fc30dc3f6eb67c7">gif_scale</a> = 500;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>};</div>
+<div class="ttc" id="aclass_model_html"><div class="ttname"><a href="class_model.html">Model</a></div><div class="ttdoc">Klasa odpowiadająca za obsługę i modyfikację obrazów.</div><div class="ttdef"><b>Definition:</b> Model.h:15</div></div>
+<div class="ttc" id="aclass_model_html_a13d09159d372d33a9e80e718f43e3f68"><div class="ttname"><a href="class_model.html#a13d09159d372d33a9e80e718f43e3f68">Model::kaleidoscope</a></div><div class="ttdeci">const wxImage kaleidoscope(const wxImage &amp;img, int n_axis, double ang_axis=0.0)</div><div class="ttdoc">Metoda generująca obraz kalejdoskopu.</div><div class="ttdef"><b>Definition:</b> Model.cpp:94</div></div>
+<div class="ttc" id="aclass_model_html_a17f3efecd6f45ae80124aaa984bd52f1"><div class="ttname"><a href="class_model.html#a17f3efecd6f45ae80124aaa984bd52f1">Model::frame_count</a></div><div class="ttdeci">int frame_count</div><div class="ttdoc">Nieużywane.</div><div class="ttdef"><b>Definition:</b> Model.h:42</div></div>
+<div class="ttc" id="aclass_model_html_a2067bd0a2b5755aed540dfdf95d98345"><div class="ttname"><a href="class_model.html#a2067bd0a2b5755aed540dfdf95d98345">Model::gif_frames</a></div><div class="ttdeci">int gif_frames</div><div class="ttdoc">Ilość klatek w GIFie.</div><div class="ttdef"><b>Definition:</b> Model.h:43</div></div>
+<div class="ttc" id="aclass_model_html_a32647ecc9ed2948e0df4592bb9064640"><div class="ttname"><a href="class_model.html#a32647ecc9ed2948e0df4592bb9064640">Model::ang_of_axis</a></div><div class="ttdeci">double ang_of_axis</div><div class="ttdoc">Kąt ustalający który zakres obrazka służy do generowania kalejdoskopu.</div><div class="ttdef"><b>Definition:</b> Model.h:41</div></div>
+<div class="ttc" id="aclass_model_html_a393d293cfa9bf5a0fa974dce1d5fe385"><div class="ttname"><a href="class_model.html#a393d293cfa9bf5a0fa974dce1d5fe385">Model::gif_buffer</a></div><div class="ttdeci">wxImageArray gif_buffer</div><div class="ttdoc">Przechowuje klatki generowanego GIFa.</div><div class="ttdef"><b>Definition:</b> Model.h:36</div></div>
+<div class="ttc" id="aclass_model_html_a3d4a951981817797a0708837130c1768"><div class="ttname"><a href="class_model.html#a3d4a951981817797a0708837130c1768">Model::m_image</a></div><div class="ttdeci">wxImage m_image</div><div class="ttdoc">Przechowuje oryginalny obrazek.</div><div class="ttdef"><b>Definition:</b> Model.h:37</div></div>
+<div class="ttc" id="aclass_model_html_a4277b80f1e81da0b16d30877855d974a"><div class="ttname"><a href="class_model.html#a4277b80f1e81da0b16d30877855d974a">Model::get_angle</a></div><div class="ttdeci">double get_angle()</div><div class="ttdoc">Zwraca kąt obrotu obrazka.</div><div class="ttdef"><b>Definition:</b> Model.cpp:32</div></div>
+<div class="ttc" id="aclass_model_html_a4f4a0568d4967efd876bc1fd54535acf"><div class="ttname"><a href="class_model.html#a4f4a0568d4967efd876bc1fd54535acf">Model::num_of_axis</a></div><div class="ttdeci">int num_of_axis</div><div class="ttdoc">Ilość osi kalejdoskopu.</div><div class="ttdef"><b>Definition:</b> Model.h:40</div></div>
+<div class="ttc" id="aclass_model_html_a5367317b02254559b9102456025771f3"><div class="ttname"><a href="class_model.html#a5367317b02254559b9102456025771f3">Model::set_angle</a></div><div class="ttdeci">void set_angle(double n)</div><div class="ttdoc">Ustala który fragment obrazka służy do generowania efektu kalejdoskopu.</div><div class="ttdef"><b>Definition:</b> Model.cpp:18</div></div>
+<div class="ttc" id="aclass_model_html_a5de10cb184cf4913b4687f513a229a92"><div class="ttname"><a href="class_model.html#a5de10cb184cf4913b4687f513a229a92">Model::m_image_copy</a></div><div class="ttdeci">wxImage m_image_copy</div><div class="ttdoc">Przechowuje kopię obrazka, na której wykonywane są operacje.</div><div class="ttdef"><b>Definition:</b> Model.h:38</div></div>
+<div class="ttc" id="aclass_model_html_a608d45d5405edebcf9a1464caa383613"><div class="ttname"><a href="class_model.html#a608d45d5405edebcf9a1464caa383613">Model::get_bitmap</a></div><div class="ttdeci">wxBitmap &amp; get_bitmap()</div><div class="ttdoc">Zwraca bitmapę utworzoną z kopii oryginalnego obrazka.</div><div class="ttdef"><b>Definition:</b> Model.cpp:40</div></div>
+<div class="ttc" id="aclass_model_html_a63bf83904cde4c693c1721fbde3051ad"><div class="ttname"><a href="class_model.html#a63bf83904cde4c693c1721fbde3051ad">Model::set_axis</a></div><div class="ttdeci">void set_axis(int n)</div><div class="ttdoc">Ustala ilość osi symetrii kalejdoskopu.</div><div class="ttdef"><b>Definition:</b> Model.cpp:6</div></div>
+<div class="ttc" id="aclass_model_html_a6613f50d7f42656e779dbc02cd8087e4"><div class="ttname"><a href="class_model.html#a6613f50d7f42656e779dbc02cd8087e4">Model::m_bitmap</a></div><div class="ttdeci">wxBitmap m_bitmap</div><div class="ttdoc">Bitmapa wyniku.</div><div class="ttdef"><b>Definition:</b> Model.h:39</div></div>
+<div class="ttc" id="aclass_model_html_a69de7656820bdc86a3f4a074c6b451a0"><div class="ttname"><a href="class_model.html#a69de7656820bdc86a3f4a074c6b451a0">Model::get_gif_buffer</a></div><div class="ttdeci">wxImageArray &amp; get_gif_buffer()</div><div class="ttdoc">Zwraca przechowywany wxImageArray używany do stworzenia GIFa.</div><div class="ttdef"><b>Definition:</b> Model.cpp:24</div></div>
+<div class="ttc" id="aclass_model_html_a751f27298fa83d3bc03d88c224a746d6"><div class="ttname"><a href="class_model.html#a751f27298fa83d3bc03d88c224a746d6">Model::reset_copy</a></div><div class="ttdeci">void reset_copy()</div><div class="ttdoc">Resetuje wynik.</div><div class="ttdef"><b>Definition:</b> Model.cpp:58</div></div>
+<div class="ttc" id="aclass_model_html_aa5b57dd6ca79e5c2f5933d487c2bf6c8"><div class="ttname"><a href="class_model.html#aa5b57dd6ca79e5c2f5933d487c2bf6c8">Model::get_axis</a></div><div class="ttdeci">int get_axis()</div><div class="ttdoc">Zwraca ilość osi kalejdoskopu.</div><div class="ttdef"><b>Definition:</b> Model.cpp:28</div></div>
+<div class="ttc" id="aclass_model_html_ad0c6e9d6be64c8b8aff239993cae8302"><div class="ttname"><a href="class_model.html#ad0c6e9d6be64c8b8aff239993cae8302">Model::get_image</a></div><div class="ttdeci">const wxImage &amp; get_image()</div><div class="ttdoc">Zwracanie const referencji do oryginalnego obrazka.</div><div class="ttdef"><b>Definition:</b> Model.cpp:36</div></div>
+<div class="ttc" id="aclass_model_html_ad411f79fd2dfcf484d21192c56bac81c"><div class="ttname"><a href="class_model.html#ad411f79fd2dfcf484d21192c56bac81c">Model::model_resize</a></div><div class="ttdeci">void model_resize()</div><div class="ttdoc">Zmiana wymiarów obrazka.</div><div class="ttdef"><b>Definition:</b> Model.cpp:284</div></div>
+<div class="ttc" id="aclass_model_html_ad46a5515817a58af52e0e9dd8b90dcd4"><div class="ttname"><a href="class_model.html#ad46a5515817a58af52e0e9dd8b90dcd4">Model::set_frames</a></div><div class="ttdeci">void set_frames(int n)</div><div class="ttdoc">Nieużywane. Ustala ilość klatek w GIFie.</div><div class="ttdef"><b>Definition:</b> Model.cpp:14</div></div>
+<div class="ttc" id="aclass_model_html_ae2d08a5cb2bc2b601fc30dc3f6eb67c7"><div class="ttname"><a href="class_model.html#ae2d08a5cb2bc2b601fc30dc3f6eb67c7">Model::gif_scale</a></div><div class="ttdeci">int gif_scale</div><div class="ttdoc">Rozmiar boku klatki GIFa.</div><div class="ttdef"><b>Definition:</b> Model.h:44</div></div>
+<div class="ttc" id="aclass_model_html_aea271dcca491ae39bfd42aeb6704bcd6"><div class="ttname"><a href="class_model.html#aea271dcca491ae39bfd42aeb6704bcd6">Model::set_scale</a></div><div class="ttdeci">void set_scale(int n)</div><div class="ttdoc">Nieużywane. Ustala rozmiar klatek w generowanym GIFie.</div><div class="ttdef"><b>Definition:</b> Model.cpp:10</div></div>
+<div class="ttc" id="aclass_model_html_af85e27b2dacbb9344924a81ad95fe1b3"><div class="ttname"><a href="class_model.html#af85e27b2dacbb9344924a81ad95fe1b3">Model::axis_show</a></div><div class="ttdeci">void axis_show(bool show)</div><div class="ttdoc">Wyświetlenie osi symetrii kalejdoskopu.</div><div class="ttdef"><b>Definition:</b> Model.cpp:225</div></div>
+<div class="ttc" id="aclass_model_html_afa107d86816f0dbe800c8d13d80d4b56"><div class="ttname"><a href="class_model.html#afa107d86816f0dbe800c8d13d80d4b56">Model::model_load</a></div><div class="ttdeci">void model_load(wxString addres)</div><div class="ttdoc">Załadowanie obrazka z systemu.</div><div class="ttdef"><b>Definition:</b> Model.cpp:67</div></div>
+<div class="ttc" id="aclass_model_html_afd2a11a2539ffe75fba13dbb1fb79019"><div class="ttname"><a href="class_model.html#afd2a11a2539ffe75fba13dbb1fb79019">Model::model_save</a></div><div class="ttdeci">void model_save(std::string file_name)</div><div class="ttdoc">Zapisanie obrazka do pliku .jpg.</div><div class="ttdef"><b>Definition:</b> Model.cpp:78</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

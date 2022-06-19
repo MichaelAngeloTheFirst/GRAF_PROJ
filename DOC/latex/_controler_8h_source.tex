@@ -1,0 +1,59 @@
+\hypertarget{_controler_8h_source}{}\doxysection{Controler.\+h}
+\label{_controler_8h_source}\index{include/Controler.h@{include/Controler.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 ﻿\#pragma once}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <wx/wx.h>}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <wx/statline.h>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <wx/wfstream.h>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}id.h"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}View.h"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}Model.h"{}}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 }
+\DoxyCodeLine{14 \textcolor{keyword}{class }\mbox{\hyperlink{class_controler}{Controler}} : \textcolor{keyword}{public} wxPanel}
+\DoxyCodeLine{15 \{}
+\DoxyCodeLine{16 \textcolor{keyword}{public}:}
+\DoxyCodeLine{17     \mbox{\hyperlink{class_controler}{Controler}}(wxWindow* parent, \mbox{\hyperlink{class_view}{View}}\& view, \mbox{\hyperlink{class_model}{Model}} \& model);}
+\DoxyCodeLine{18     \mbox{\hyperlink{class_controler}{\string~Controler}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_controler_a9d28e0b4245a9f9026e373df172b0f78}{onLoadClick}}(wxCommandEvent\& event);}
+\DoxyCodeLine{21     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_controler_a2f971a4db45a754e4b96285127dfc12e}{onSaveClick}}(wxCommandEvent\& event);}
+\DoxyCodeLine{22     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_controler_aa24475803825f2eff99f4bf58299b10b}{onResetClick}}(wxCommandEvent\& event);}
+\DoxyCodeLine{23     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_controler_a7ca9a4f72db1949019a0062d4a4666ee}{onAxisCheck}}(wxCommandEvent\& event);}
+\DoxyCodeLine{24     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_controler_a891fcfb19031aff7d99e79b99d4e1c07}{onAxisWrite}}(wxCommandEvent\& event);}
+\DoxyCodeLine{25     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_controler_aa3884779457fb32f489b7e28773c23a5}{onFramesWrite}}(wxCommandEvent\& event);}
+\DoxyCodeLine{26     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_controler_a9cdde26b9dfe1ea1c29076b5de92f1ce}{onScaleWrite}}(wxCommandEvent\& event);}
+\DoxyCodeLine{27     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_controler_a36b8a6c710e2b4ee7a934dc692f8ee47}{onRotationWrite}}(wxCommandEvent\& event);}
+\DoxyCodeLine{28     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_controler_a5669b8fb7bcb3fe487c1b4fffe08c3a9}{onGifClick}}(wxCommandEvent\& event);}
+\DoxyCodeLine{29     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_controler_ac96adefaa80c2b0a32e4623021d967e0}{onKaleidoClick}}(wxCommandEvent\& event);}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31 \textcolor{keyword}{private}:}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_controler_a0f0a99aefeaa4830998768e142d5e9c8}{isLoaded}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{34     std::string \mbox{\hyperlink{class_controler_a91d22641add3b4065acd527f5983d495}{m\_name}};}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37     wxButton* \mbox{\hyperlink{class_controler_a6ec85953fc8609049d8add5ea6a8d62b}{collapseButton}} = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{38     wxButton* \mbox{\hyperlink{class_controler_a1342b3ece2deb20522ebc1bb025e76a9}{m\_loadButton}} = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{39     wxButton* \mbox{\hyperlink{class_controler_a87ca6cc50bf97c4e62ba6fb69141ab99}{m\_resetButton}} = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{40     wxButton* \mbox{\hyperlink{class_controler_a8dc76d5826bb878f0200112e7a4dbab4}{m\_saveButton}} = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{41     wxCheckBox* \mbox{\hyperlink{class_controler_a0d5ac621f4c647e453995d58bde5edea}{m\_axisCheckbox}} = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{42     wxBoxSizer* \mbox{\hyperlink{class_controler_a4f58bbdaf9c7a51b14d7b605a11717d7}{m\_bsizer}} = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{43     wxTextCtrl* \mbox{\hyperlink{class_controler_a494b4e706a2cf929dc0dc5fdea189029}{m\_axisText}} = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{44     wxTextCtrl* \mbox{\hyperlink{class_controler_a82c31eb448111e6e099359853b8fef20}{m\_rotationText}} = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{45     wxButton* \mbox{\hyperlink{class_controler_a4bf2e59fe9a87f5ba348b7206d74e668}{m\_animateButton}} = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{46     wxButton* \mbox{\hyperlink{class_controler_a4944ff839ceeed45b9aed3c4601a82ad}{m\_kaleidoButton}} = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{47     wxGauge* \mbox{\hyperlink{class_controler_af13cf3f36fece5d118deb59cc025bc90}{m\_progress\_bar}} = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{48     wxTextCtrl* \mbox{\hyperlink{class_controler_ad86508e1b6e7d198c92b9d2b071fca74}{m\_frame\_count\_input}} = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{49     wxTextCtrl* \mbox{\hyperlink{class_controler_abf51eb7c3dab89706109070612e45a81}{m\_gif\_scale\_image}} = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52     \mbox{\hyperlink{class_view}{View}}\& \mbox{\hyperlink{class_controler_a587243f044a1436f66c0cbc826905655}{m\_view}};}
+\DoxyCodeLine{53     \mbox{\hyperlink{class_model}{Model}}\& \mbox{\hyperlink{class_controler_a38c7ad5af2e17fafc4e6fda2267e99d0}{m\_model}};}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56 \};}
+
+\end{DoxyCode}

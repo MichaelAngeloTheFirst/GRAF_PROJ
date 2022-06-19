@@ -1,0 +1,142 @@
+\hypertarget{class_model}{}\doxysection{Dokumentacja klasy Model}
+\label{class_model}\index{Model@{Model}}
+
+
+Klasa odpowiadająca za obsługę i modyfikację obrazów.  
+
+
+
+
+{\ttfamily \#include $<$Model.\+h$>$}
+
+\doxysubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_model_ad411f79fd2dfcf484d21192c56bac81c}\label{class_model_ad411f79fd2dfcf484d21192c56bac81c}} 
+void {\bfseries model\+\_\+resize} ()
+\begin{DoxyCompactList}\small\item\em Zmiana wymiarów obrazka. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_model_afd2a11a2539ffe75fba13dbb1fb79019}\label{class_model_afd2a11a2539ffe75fba13dbb1fb79019}} 
+void {\bfseries model\+\_\+save} (std\+::string file\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Zapisanie obrazka do pliku .jpg. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_model_afa107d86816f0dbe800c8d13d80d4b56}\label{class_model_afa107d86816f0dbe800c8d13d80d4b56}} 
+void {\bfseries model\+\_\+load} (wx\+String addres)
+\begin{DoxyCompactList}\small\item\em Załadowanie obrazka z systemu. \end{DoxyCompactList}\item 
+const wx\+Image \mbox{\hyperlink{class_model_a13d09159d372d33a9e80e718f43e3f68}{kaleidoscope}} (const wx\+Image \&img, int n\+\_\+axis, double ang\+\_\+axis=0.\+0)
+\begin{DoxyCompactList}\small\item\em Metoda generująca obraz kalejdoskopu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_model_af85e27b2dacbb9344924a81ad95fe1b3}{axis\+\_\+show}} (bool show)
+\begin{DoxyCompactList}\small\item\em Wyświetlenie osi symetrii kalejdoskopu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_model_ad0c6e9d6be64c8b8aff239993cae8302}\label{class_model_ad0c6e9d6be64c8b8aff239993cae8302}} 
+const wx\+Image \& {\bfseries get\+\_\+image} ()
+\begin{DoxyCompactList}\small\item\em Zwracanie const referencji do oryginalnego obrazka. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_model_a69de7656820bdc86a3f4a074c6b451a0}\label{class_model_a69de7656820bdc86a3f4a074c6b451a0}} 
+wx\+Image\+Array \& {\bfseries get\+\_\+gif\+\_\+buffer} ()
+\begin{DoxyCompactList}\small\item\em Zwraca przechowywany wx\+Image\+Array używany do stworzenia GIFa. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_model_a751f27298fa83d3bc03d88c224a746d6}\label{class_model_a751f27298fa83d3bc03d88c224a746d6}} 
+void {\bfseries reset\+\_\+copy} ()
+\begin{DoxyCompactList}\small\item\em Resetuje wynik. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_model_a608d45d5405edebcf9a1464caa383613}\label{class_model_a608d45d5405edebcf9a1464caa383613}} 
+wx\+Bitmap \& {\bfseries get\+\_\+bitmap} ()
+\begin{DoxyCompactList}\small\item\em Zwraca bitmapę utworzoną z kopii oryginalnego obrazka. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_model_aa5b57dd6ca79e5c2f5933d487c2bf6c8}\label{class_model_aa5b57dd6ca79e5c2f5933d487c2bf6c8}} 
+int {\bfseries get\+\_\+axis} ()
+\begin{DoxyCompactList}\small\item\em Zwraca ilość osi kalejdoskopu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_model_a4277b80f1e81da0b16d30877855d974a}\label{class_model_a4277b80f1e81da0b16d30877855d974a}} 
+double {\bfseries get\+\_\+angle} ()
+\begin{DoxyCompactList}\small\item\em Zwraca kąt obrotu obrazka. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_model_a63bf83904cde4c693c1721fbde3051ad}\label{class_model_a63bf83904cde4c693c1721fbde3051ad}} 
+void {\bfseries set\+\_\+axis} (int n)
+\begin{DoxyCompactList}\small\item\em Ustala ilość osi symetrii kalejdoskopu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_model_aea271dcca491ae39bfd42aeb6704bcd6}\label{class_model_aea271dcca491ae39bfd42aeb6704bcd6}} 
+void {\bfseries set\+\_\+scale} (int n)
+\begin{DoxyCompactList}\small\item\em Nieużywane. Ustala rozmiar klatek w generowanym GIFie. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_model_ad46a5515817a58af52e0e9dd8b90dcd4}\label{class_model_ad46a5515817a58af52e0e9dd8b90dcd4}} 
+void {\bfseries set\+\_\+frames} (int n)
+\begin{DoxyCompactList}\small\item\em Nieużywane. Ustala ilość klatek w GIFie. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_model_a5367317b02254559b9102456025771f3}\label{class_model_a5367317b02254559b9102456025771f3}} 
+void {\bfseries set\+\_\+angle} (double n)
+\begin{DoxyCompactList}\small\item\em Ustala który fragment obrazka służy do generowania efektu kalejdoskopu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_model_a393d293cfa9bf5a0fa974dce1d5fe385}\label{class_model_a393d293cfa9bf5a0fa974dce1d5fe385}} 
+wx\+Image\+Array {\bfseries gif\+\_\+buffer}
+\begin{DoxyCompactList}\small\item\em Przechowuje klatki generowanego GIFa. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_model_a3d4a951981817797a0708837130c1768}\label{class_model_a3d4a951981817797a0708837130c1768}} 
+wx\+Image {\bfseries m\+\_\+image}
+\begin{DoxyCompactList}\small\item\em Przechowuje oryginalny obrazek. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_model_a5de10cb184cf4913b4687f513a229a92}\label{class_model_a5de10cb184cf4913b4687f513a229a92}} 
+wx\+Image {\bfseries m\+\_\+image\+\_\+copy}
+\begin{DoxyCompactList}\small\item\em Przechowuje kopię obrazka, na której wykonywane są operacje. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_model_a6613f50d7f42656e779dbc02cd8087e4}\label{class_model_a6613f50d7f42656e779dbc02cd8087e4}} 
+wx\+Bitmap {\bfseries m\+\_\+bitmap}
+\begin{DoxyCompactList}\small\item\em Bitmapa wyniku. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_model_a4f4a0568d4967efd876bc1fd54535acf}\label{class_model_a4f4a0568d4967efd876bc1fd54535acf}} 
+int {\bfseries num\+\_\+of\+\_\+axis} = 1
+\begin{DoxyCompactList}\small\item\em Ilość osi kalejdoskopu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_model_a32647ecc9ed2948e0df4592bb9064640}\label{class_model_a32647ecc9ed2948e0df4592bb9064640}} 
+double {\bfseries ang\+\_\+of\+\_\+axis} = 0.\+0
+\begin{DoxyCompactList}\small\item\em Kąt ustalający który zakres obrazka służy do generowania kalejdoskopu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_model_a17f3efecd6f45ae80124aaa984bd52f1}\label{class_model_a17f3efecd6f45ae80124aaa984bd52f1}} 
+int {\bfseries frame\+\_\+count} = 60
+\begin{DoxyCompactList}\small\item\em Nieużywane. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_model_a2067bd0a2b5755aed540dfdf95d98345}\label{class_model_a2067bd0a2b5755aed540dfdf95d98345}} 
+int {\bfseries gif\+\_\+frames} = 90
+\begin{DoxyCompactList}\small\item\em Ilość klatek w GIFie. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_model_ae2d08a5cb2bc2b601fc30dc3f6eb67c7}\label{class_model_ae2d08a5cb2bc2b601fc30dc3f6eb67c7}} 
+int {\bfseries gif\+\_\+scale} = 500
+\begin{DoxyCompactList}\small\item\em Rozmiar boku klatki GIFa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Klasa odpowiadająca za obsługę i modyfikację obrazów. 
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_model_af85e27b2dacbb9344924a81ad95fe1b3}\label{class_model_af85e27b2dacbb9344924a81ad95fe1b3}} 
+\index{Model@{Model}!axis\_show@{axis\_show}}
+\index{axis\_show@{axis\_show}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{axis\_show()}{axis\_show()}}
+{\footnotesize\ttfamily void Model\+::axis\+\_\+show (\begin{DoxyParamCaption}\item[{bool}]{show }\end{DoxyParamCaption})}
+
+
+
+Wyświetlenie osi symetrii kalejdoskopu. 
+
+Metoda rysująca linie osi symetrii na obrazku kalejdoskopu.
+
+Metoda ta rysuje osi kaleidoskopu poprzez kolorowanie pikseli obrazka na kolor czerwony, wykorzystując do tego bibliotekę CImg. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em show} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_model_a13d09159d372d33a9e80e718f43e3f68}\label{class_model_a13d09159d372d33a9e80e718f43e3f68}} 
+\index{Model@{Model}!kaleidoscope@{kaleidoscope}}
+\index{kaleidoscope@{kaleidoscope}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{kaleidoscope()}{kaleidoscope()}}
+{\footnotesize\ttfamily const wx\+Image Model\+::kaleidoscope (\begin{DoxyParamCaption}\item[{const wx\+Image \&}]{img,  }\item[{int}]{n\+\_\+axis,  }\item[{double}]{ang\+\_\+axis = {\ttfamily 0.0} }\end{DoxyParamCaption})}
+
+
+
+Metoda generująca obraz kalejdoskopu. 
+
+Kalejdoskop jest generowany za pomocą operacji odbić lustrzanych wzdłuż osi symetrii. Wszystko po prawej stronie osi odbicia jest powielone na lewą stronę. Aby to zrealizować, obrazek jest początkowo obracany, aby oś symetrii pokrywała się z pionową osią.\+Następnie tworzona jest tymczasowa bitmapa, zawierająca lustrzane odbicie całości, a na końcu oba obrazki są ze sobą sklejane. Dodatkowo dla przyspieszenia algorytmu wykorzystano multithreading. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em img} & Obrazek, na którym będzie nakładany efekt.\\
+\hline
+{\em n\+\_\+axis} & Ilość osi kalejdoskopu.\\
+\hline
+{\em ang\+\_\+axis} & Zakres obrazka wykorzystany do generowania kalejdoskopu.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Obrazek odzwierciedlający działanie kalejdoskopu.
+\end{DoxyReturn}
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+include/Model.\+h\item 
+src/Model.\+cpp\end{DoxyCompactItemize}

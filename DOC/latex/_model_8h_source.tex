@@ -1,0 +1,48 @@
+\hypertarget{_model_8h_source}{}\doxysection{Model.\+h}
+\label{_model_8h_source}\index{include/Model.h@{include/Model.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 ﻿\#pragma once}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <wx/wx.h>}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <wx/image.h>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <wx/anidecod.h>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <wx/quantize.h>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <wx/wfstream.h>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}CImg.h"{}}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{comment}{//WX\_DECLARE\_OBJARRAY(wxImage, wxImageArray);}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{14 \textcolor{keyword}{class }\mbox{\hyperlink{class_model}{Model}} }
+\DoxyCodeLine{15 \{}
+\DoxyCodeLine{16 \textcolor{keyword}{public}:}
+\DoxyCodeLine{17     \mbox{\hyperlink{class_model}{Model}}();}
+\DoxyCodeLine{18     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_model_ad411f79fd2dfcf484d21192c56bac81c}{model\_resize}}(); }
+\DoxyCodeLine{19     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_model_afd2a11a2539ffe75fba13dbb1fb79019}{model\_save}}(std::string file\_name);}
+\DoxyCodeLine{20     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_model_afa107d86816f0dbe800c8d13d80d4b56}{model\_load}}(wxString addres);}
+\DoxyCodeLine{21     \textcolor{keyword}{const} wxImage \mbox{\hyperlink{class_model_a13d09159d372d33a9e80e718f43e3f68}{kaleidoscope}}(\textcolor{keyword}{const} wxImage\& img, \textcolor{keywordtype}{int} n\_axis, \textcolor{keywordtype}{double} ang\_axis = 0.0);}
+\DoxyCodeLine{22     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_model_af85e27b2dacbb9344924a81ad95fe1b3}{axis\_show}}(\textcolor{keywordtype}{bool} show);}
+\DoxyCodeLine{23     \textcolor{keyword}{const} wxImage \& \mbox{\hyperlink{class_model_ad0c6e9d6be64c8b8aff239993cae8302}{get\_image}}();}
+\DoxyCodeLine{24     wxImageArray\& \mbox{\hyperlink{class_model_a69de7656820bdc86a3f4a074c6b451a0}{get\_gif\_buffer}}();}
+\DoxyCodeLine{25     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_model_a751f27298fa83d3bc03d88c224a746d6}{reset\_copy}}();}
+\DoxyCodeLine{26     wxBitmap \& \mbox{\hyperlink{class_model_a608d45d5405edebcf9a1464caa383613}{get\_bitmap}}();}
+\DoxyCodeLine{27     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_model_aa5b57dd6ca79e5c2f5933d487c2bf6c8}{get\_axis}}();}
+\DoxyCodeLine{28     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_model_a4277b80f1e81da0b16d30877855d974a}{get\_angle}}();}
+\DoxyCodeLine{29     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_model_a63bf83904cde4c693c1721fbde3051ad}{set\_axis}}(\textcolor{keywordtype}{int} n);}
+\DoxyCodeLine{30     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_model_aea271dcca491ae39bfd42aeb6704bcd6}{set\_scale}}(\textcolor{keywordtype}{int} n);}
+\DoxyCodeLine{31     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_model_ad46a5515817a58af52e0e9dd8b90dcd4}{set\_frames}}(\textcolor{keywordtype}{int} n);}
+\DoxyCodeLine{32     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_model_a5367317b02254559b9102456025771f3}{set\_angle}}(\textcolor{keywordtype}{double} n);}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35 \textcolor{keyword}{private}:}
+\DoxyCodeLine{36     wxImageArray \mbox{\hyperlink{class_model_a393d293cfa9bf5a0fa974dce1d5fe385}{gif\_buffer}};}
+\DoxyCodeLine{37     wxImage \mbox{\hyperlink{class_model_a3d4a951981817797a0708837130c1768}{m\_image}};}
+\DoxyCodeLine{38     wxImage \mbox{\hyperlink{class_model_a5de10cb184cf4913b4687f513a229a92}{m\_image\_copy}};}
+\DoxyCodeLine{39     wxBitmap \mbox{\hyperlink{class_model_a6613f50d7f42656e779dbc02cd8087e4}{m\_bitmap}};}
+\DoxyCodeLine{40     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_model_a4f4a0568d4967efd876bc1fd54535acf}{num\_of\_axis}} = 1;}
+\DoxyCodeLine{41     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_model_a32647ecc9ed2948e0df4592bb9064640}{ang\_of\_axis}} = 0.0;}
+\DoxyCodeLine{42     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_model_a17f3efecd6f45ae80124aaa984bd52f1}{frame\_count}} = 60;}
+\DoxyCodeLine{43     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_model_a2067bd0a2b5755aed540dfdf95d98345}{gif\_frames}} = 90;}
+\DoxyCodeLine{44     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_model_ae2d08a5cb2bc2b601fc30dc3f6eb67c7}{gif\_scale}} = 500;}
+\DoxyCodeLine{45 \};}
+
+\end{DoxyCode}

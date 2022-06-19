@@ -1,0 +1,130 @@
+\hypertarget{class_controler}{}\doxysection{Dokumentacja klasy Controler}
+\label{class_controler}\index{Controler@{Controler}}
+
+
+Klasa odpowiadająca za implementacje przycisków.  
+
+
+
+
+{\ttfamily \#include $<$Controler.\+h$>$}
+
+Diagram dziedziczenia dla Controler\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_controler}
+\end{center}
+\end{figure}
+\doxysubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_controler_afc0c1b6e58515838d259d10e259e50d7}\label{class_controler_afc0c1b6e58515838d259d10e259e50d7}} 
+{\bfseries Controler} (wx\+Window $\ast$parent, \mbox{\hyperlink{class_view}{View}} \&view, \mbox{\hyperlink{class_model}{Model}} \&model)
+\item 
+\mbox{\Hypertarget{class_controler_a9d28e0b4245a9f9026e373df172b0f78}\label{class_controler_a9d28e0b4245a9f9026e373df172b0f78}} 
+void {\bfseries on\+Load\+Click} (wx\+Command\+Event \&event)
+\begin{DoxyCompactList}\small\item\em Metoda do wczytania obrazka. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_controler_a2f971a4db45a754e4b96285127dfc12e}\label{class_controler_a2f971a4db45a754e4b96285127dfc12e}} 
+void {\bfseries on\+Save\+Click} (wx\+Command\+Event \&event)
+\begin{DoxyCompactList}\small\item\em Metoda do zapisania utworzonego kalejdoskopem obrazka. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_controler_aa24475803825f2eff99f4bf58299b10b}\label{class_controler_aa24475803825f2eff99f4bf58299b10b}} 
+void {\bfseries on\+Reset\+Click} (wx\+Command\+Event \&event)
+\begin{DoxyCompactList}\small\item\em Metoda do zresetowania obrazka do oryginalnego stanu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_controler_a7ca9a4f72db1949019a0062d4a4666ee}\label{class_controler_a7ca9a4f72db1949019a0062d4a4666ee}} 
+void {\bfseries on\+Axis\+Check} (wx\+Command\+Event \&event)
+\begin{DoxyCompactList}\small\item\em Metoda do wyświetlania osi na obrazku. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_controler_a891fcfb19031aff7d99e79b99d4e1c07}\label{class_controler_a891fcfb19031aff7d99e79b99d4e1c07}} 
+void {\bfseries on\+Axis\+Write} (wx\+Command\+Event \&event)
+\begin{DoxyCompactList}\small\item\em Metoda do ustawienia ilości osi kalejdoskopu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_controler_aa3884779457fb32f489b7e28773c23a5}\label{class_controler_aa3884779457fb32f489b7e28773c23a5}} 
+void {\bfseries on\+Frames\+Write} (wx\+Command\+Event \&event)
+\begin{DoxyCompactList}\small\item\em Nieużywane. Metoda ustalająca ilość klatek do GIFa. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_controler_a9cdde26b9dfe1ea1c29076b5de92f1ce}\label{class_controler_a9cdde26b9dfe1ea1c29076b5de92f1ce}} 
+void {\bfseries on\+Scale\+Write} (wx\+Command\+Event \&event)
+\begin{DoxyCompactList}\small\item\em Nieużywane. Metoda ustalająca rozmiar GIFa. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_controler_a36b8a6c710e2b4ee7a934dc692f8ee47}\label{class_controler_a36b8a6c710e2b4ee7a934dc692f8ee47}} 
+void {\bfseries on\+Rotation\+Write} (wx\+Command\+Event \&event)
+\begin{DoxyCompactList}\small\item\em Metoda do ustawienia obrotu o dodatkowy kąt obrazka w kalejdoskopie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_controler_a5669b8fb7bcb3fe487c1b4fffe08c3a9}{on\+Gif\+Click}} (wx\+Command\+Event \&event)
+\begin{DoxyCompactList}\small\item\em Metoda do wygenerowania GIFa. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_controler_ac96adefaa80c2b0a32e4623021d967e0}\label{class_controler_ac96adefaa80c2b0a32e4623021d967e0}} 
+void {\bfseries on\+Kaleido\+Click} (wx\+Command\+Event \&event)
+\begin{DoxyCompactList}\small\item\em Metoda do wygenerowania obrazka kalejdoskopu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_controler_a0f0a99aefeaa4830998768e142d5e9c8}\label{class_controler_a0f0a99aefeaa4830998768e142d5e9c8}} 
+bool {\bfseries is\+Loaded} = false
+\begin{DoxyCompactList}\small\item\em Zmienna do sprawdzenia czy obrazek się wczytał. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_controler_a91d22641add3b4065acd527f5983d495}\label{class_controler_a91d22641add3b4065acd527f5983d495}} 
+std\+::string {\bfseries m\+\_\+name}
+\begin{DoxyCompactList}\small\item\em Zmienna do przechowania nazwy zapisywanego obrazka. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_controler_a6ec85953fc8609049d8add5ea6a8d62b}\label{class_controler_a6ec85953fc8609049d8add5ea6a8d62b}} 
+wx\+Button $\ast$ {\bfseries collapse\+Button} = nullptr
+\begin{DoxyCompactList}\small\item\em Nieużywane. Przycisk chowający UI. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_controler_a1342b3ece2deb20522ebc1bb025e76a9}\label{class_controler_a1342b3ece2deb20522ebc1bb025e76a9}} 
+wx\+Button $\ast$ {\bfseries m\+\_\+load\+Button} = nullptr
+\begin{DoxyCompactList}\small\item\em Przycisk do wczytania obrazka do programu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_controler_a87ca6cc50bf97c4e62ba6fb69141ab99}\label{class_controler_a87ca6cc50bf97c4e62ba6fb69141ab99}} 
+wx\+Button $\ast$ {\bfseries m\+\_\+reset\+Button} = nullptr
+\begin{DoxyCompactList}\small\item\em Przycisk do zresetowania wyświetlanego obrazka. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_controler_a8dc76d5826bb878f0200112e7a4dbab4}\label{class_controler_a8dc76d5826bb878f0200112e7a4dbab4}} 
+wx\+Button $\ast$ {\bfseries m\+\_\+save\+Button} = nullptr
+\begin{DoxyCompactList}\small\item\em Przycisk do zapisania obrazka do pliku .jpg. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_controler_a0d5ac621f4c647e453995d58bde5edea}\label{class_controler_a0d5ac621f4c647e453995d58bde5edea}} 
+wx\+Check\+Box $\ast$ {\bfseries m\+\_\+axis\+Checkbox} = nullptr
+\begin{DoxyCompactList}\small\item\em Checkbox do włączenia widoku osi kalejdoskopu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_controler_a4f58bbdaf9c7a51b14d7b605a11717d7}\label{class_controler_a4f58bbdaf9c7a51b14d7b605a11717d7}} 
+wx\+Box\+Sizer $\ast$ {\bfseries m\+\_\+bsizer} = nullptr
+\begin{DoxyCompactList}\small\item\em Sizer okna. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_controler_a494b4e706a2cf929dc0dc5fdea189029}\label{class_controler_a494b4e706a2cf929dc0dc5fdea189029}} 
+wx\+Text\+Ctrl $\ast$ {\bfseries m\+\_\+axis\+Text} = nullptr
+\begin{DoxyCompactList}\small\item\em Pole tekstowe do ustawiania ilości osi kalejdoskopu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_controler_a82c31eb448111e6e099359853b8fef20}\label{class_controler_a82c31eb448111e6e099359853b8fef20}} 
+wx\+Text\+Ctrl $\ast$ {\bfseries m\+\_\+rotation\+Text} = nullptr
+\begin{DoxyCompactList}\small\item\em Pole tekstowe do ustawienia kątu obrotu obrazka w kalejdoskopie. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_controler_a4bf2e59fe9a87f5ba348b7206d74e668}\label{class_controler_a4bf2e59fe9a87f5ba348b7206d74e668}} 
+wx\+Button $\ast$ {\bfseries m\+\_\+animate\+Button} = nullptr
+\begin{DoxyCompactList}\small\item\em Przycisk do generacji GIFa. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_controler_a4944ff839ceeed45b9aed3c4601a82ad}\label{class_controler_a4944ff839ceeed45b9aed3c4601a82ad}} 
+wx\+Button $\ast$ {\bfseries m\+\_\+kaleido\+Button} = nullptr
+\begin{DoxyCompactList}\small\item\em Przycisk do wygenerowania obrazka z kalejdoskopu o określnej ilości osi oraz kątu obrotu obrazka. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_controler_af13cf3f36fece5d118deb59cc025bc90}\label{class_controler_af13cf3f36fece5d118deb59cc025bc90}} 
+wx\+Gauge $\ast$ {\bfseries m\+\_\+progress\+\_\+bar} = nullptr
+\begin{DoxyCompactList}\small\item\em Pasek ładowania podczas tworzenia GIFa. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_controler_ad86508e1b6e7d198c92b9d2b071fca74}\label{class_controler_ad86508e1b6e7d198c92b9d2b071fca74}} 
+wx\+Text\+Ctrl $\ast$ {\bfseries m\+\_\+frame\+\_\+count\+\_\+input} = nullptr
+\begin{DoxyCompactList}\small\item\em Nieużywane. Pole tekstowe do wpisywania ilości klatek GIFa. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_controler_abf51eb7c3dab89706109070612e45a81}\label{class_controler_abf51eb7c3dab89706109070612e45a81}} 
+wx\+Text\+Ctrl $\ast$ {\bfseries m\+\_\+gif\+\_\+scale\+\_\+image} = nullptr
+\begin{DoxyCompactList}\small\item\em Nieużywane. Pole tekstowe do ustalenia rozmiarów GIFa. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_controler_a587243f044a1436f66c0cbc826905655}\label{class_controler_a587243f044a1436f66c0cbc826905655}} 
+\mbox{\hyperlink{class_view}{View}} \& {\bfseries m\+\_\+view}
+\begin{DoxyCompactList}\small\item\em Referencja do \mbox{\hyperlink{class_view}{View}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_controler_a38c7ad5af2e17fafc4e6fda2267e99d0}\label{class_controler_a38c7ad5af2e17fafc4e6fda2267e99d0}} 
+\mbox{\hyperlink{class_model}{Model}} \& {\bfseries m\+\_\+model}
+\begin{DoxyCompactList}\small\item\em Referencja do Modelu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Klasa odpowiadająca za implementacje przycisków. 
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_controler_a5669b8fb7bcb3fe487c1b4fffe08c3a9}\label{class_controler_a5669b8fb7bcb3fe487c1b4fffe08c3a9}} 
+\index{Controler@{Controler}!onGifClick@{onGifClick}}
+\index{onGifClick@{onGifClick}!Controler@{Controler}}
+\doxysubsubsection{\texorpdfstring{onGifClick()}{onGifClick()}}
+{\footnotesize\ttfamily void Controler\+::on\+Gif\+Click (\begin{DoxyParamCaption}\item[{wx\+Command\+Event \&}]{event }\end{DoxyParamCaption})}
+
+
+
+Metoda do wygenerowania GIFa. 
+
+Metoda tworzy serię 60 bitmap, która następnie zostaje zamieniona na animacje w formacie \char`\"{}.\+gif\char`\"{}.
+
+Na początku tworzy plik \char`\"{}animation.\+gif\char`\"{}, do którego zostanie zapisana animacja. Następnie zmieniany obrazek zostaje przeskalowany na rozmiar 500x500 pikseli oraz utworzone zostają dwie tablice o rozmiarze 60. W kolejnym kroku generowane są kolejne klatki GIFa, które przed dodaniem do właściwej tablicy, dodatkowo zmniejsza się im rozamiar funkcją wx\+Quantize. Na koniec liczony jest odstęp pomiędzy klatkami, aby było wyraźnie widać zmianę kąta i animacja zostaje zapisana do pliku \char`\"{}animation.\+gif\char`\"{}. 
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+include/Controler.\+h\item 
+src/Controler.\+cpp\end{DoxyCompactItemize}
